@@ -1,0 +1,23 @@
+<p>sign-up works!</p>
+
+<div>
+    <img src="/assets/img/users.png" id="icon" alt="User Icon" />
+  </div>
+  <form>
+    <input type="text" name="fullName" placeholder="Full Name" required >
+    <!-- <div *ngIf="signUpForm.submitted && !fullName.valid">
+      <label class="validation-message">This field is required.</label>
+    </div> -->
+    <input type="text" name="email" placeholder="Email" required >
+    <!-- <div *ngIf="signUpForm.submitted && email.errors">
+      <label *ngIf="email.errors.required" class="validation-message">This field is required.</label>
+      <label *ngIf="email.errors.pattern" class="validation-message">Invalid email address.</label>
+    </div> -->
+    <input type="password"  name="password" placeholder="Password" minlength="4" required >
+    <!-- <div *ngIf="signUpForm.submitted && password.errors">
+      <label *ngIf="password.errors.required" class="validation-message">This field is required.</label>
+      <label *ngIf="password.errors.minlength" class="validation-message">Enter atleast 4 characters.</label>
+    </div> -->
+    <input type="submit" value="Sign Up">
+  </form>
+  
